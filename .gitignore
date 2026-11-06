@@ -1,0 +1,18 @@
+# Python 快取與編譯檔
+__pycache__/
+*.py[cod]
+
+# 環境與工具設定檔
+.qodo
+.idea/
+venv/
+.venv/
+
+# 遊戲存檔與大型媒體資料（依需求調整）
+# save.txt
+Video/
+readme.txt
+
+# OS 產生的雜項檔案
+.DS_Store
+Thumbs.db
