@@ -9,11 +9,11 @@ class Enemy(pygame.sprite.Sprite): #x, y, width, height, radial_growth, angle, d
         pygame.sprite.Sprite.__init__(self)
         ####### setups for enemy
         if is_boss:
-            self.image_path = os.path.join('assets\\images\\enemy\\boss', image_name)
+            self.image_path = os.path.join('assets', 'images', 'enemy', 'boss', image_name)
             self.image = pygame.image.load(self.image_path).convert_alpha()
             self.image = pygame.transform.scale(self.image, (width, height))
         else:
-            self.image_path = os.path.join('assets\images\enemy\minion', image_name)
+            self.image_path = os.path.join('assets', 'images', 'enemy', 'minion', image_name)
             self.image = pygame.image.load(self.image_path).convert_alpha()
             self.image = pygame.transform.scale(self.image, (width, height))
         self.mask = pygame.mask.from_surface(self.image)
